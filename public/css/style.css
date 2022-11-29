@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle,pink,white,pink);
+}
+
+h1{
+    letter-spacing: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    color: crimson;
+
+}
+
+.first-section{
+    position: relative;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-circle{
+    top: 0;
+    left: -15px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(252, 95, 95);
+    animation: mysetup 2s infinite alternate linear ;
+    border-radius: 200px;
+    border: none;
+}
+
+.second-circle{
+    top: 0;
+    right: -15px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 95, 95);
+    animation: mysetup 2s infinite alternate linear ;
+    border-radius: 200px;
+    border: none;
+}
+
+.triangle{
+    position: absolute;
+    bottom: -75px;
+    width: 168.3px;
+    height: 100px;
+    background-color: rgb(252, 95, 95);
+    border: none;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    animation: mysetup 2s infinite alternate linear ;
+}
+
+
+@keyframes mysetup{
+    0%{
+        background-color: pink;
+    }
+
+    20%{
+        background-color:crimson;
+    }
+
+    40%{
+       background-color: rgb(255, 163, 163);
+    }
+
+    60%{
+        background-color: lightcoral;
+    }
+
+    80%{
+        background-color: lightpink;
+    }
+
+    100%{
+        background-color: darkred;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(90px);
+}
+
+button{
+    padding: 10px 30px ;
+    border: none;
+    border-radius: 0 100px 0 100px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: crimson;
+    color: white;
+    box-shadow: 0 0 5px 1px rgb(155, 153, 153);
+    transform: translateY(20px);
+    cursor: pointer;
+}
+
+button:hover{
+    animation: animate 300ms infinite alternate linear ;
+}
+
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 3px 3px rgb(131, 69, 79);  
+    }
+
+    100%{
+        box-shadow: 0 0 7px 7px rgb(221, 88, 108);
+    }
+}
+
+input{
+    color: crimson;
+    outline: crimson;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+label{
+    color: crimson;
+    font-size: 20px;
+    font-weight: 800;
+}
+.names{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
